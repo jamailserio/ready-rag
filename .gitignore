@@ -1,9 +1,16 @@
 node_modules/
 .next/
 out/
-.env
-.env.local
 *.tsbuildinfo
 .DS_Store
 .vercel
+
+# Secrets: never commit real keys
+.env
 .env*
+# ...but DO commit the template so others know which variables to set
+!.env.example
+
+# Generated files
+public/docs/
+chunks-preview.json
